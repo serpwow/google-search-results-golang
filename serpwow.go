@@ -43,12 +43,12 @@ func GetJSON(parameters map[string]string, apiKey string) (SerpWowResponse, erro
 	return decodeJSON(rsp.Body)
 }
 
-func GetHTML(parameters map[string]string, apiKey string) (*string, error) {
+func GetHTML(parameters map[string]string, apiKey string) (string, error) {
 	rsp := execute(parameters, "json", apiKey, "/search")
 	return decodeText(rsp.Body)
 }
 
-func GetCSV(parameters map[string]string, apiKey string) (*string, error) {
+func GetCSV(parameters map[string]string, apiKey string) (string, error) {
 	rsp := execute(parameters, "csv", apiKey, "/search")
 	return decodeText(rsp.Body)
 }
@@ -82,11 +82,11 @@ func decodeJSON(body io.ReadCloser) (SerpWowResponse, error) {
 
 }
 
-func decodeText(body io.ReadCloser) (*string, error) {
+func decodeText(body io.ReadCloser) (string, error) {
 	buffer, err := ioutil.ReadAll(body)
 	if err != nil {
 		panic(err)
 	}
-	text := string(buffer)
-	return &text, nil
+	responseString := string(buffer)
+	return responseString, nil
 }
