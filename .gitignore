@@ -1,4 +1,1 @@
-tmp/
-Makefile
-*.iml
-.idea/
+.DS_Store
