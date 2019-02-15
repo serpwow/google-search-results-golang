@@ -1,6 +1,6 @@
 # Google Search Results in Golang
 
-This Golang package allows you to scrape and parse Google Search Results using [SerpWow](https://serpwow.com). In addition to [Search](https://serpwow.com/docs/search/overview) you can also use this package to access the SerpWow [Locations API](https://serpwow.com/docs/locations/overview) and [Account API](https://serpwow.com/docs/account/overview).
+This Golang package allows you to scrape and parse Google Search Results using [SerpWow](https://serpwow.com). In addition to [Search](https://serpwow.com/docs/search/overview) you can also use this package to access the SerpWow [Locations API](https://serpwow.com/docs/locations/overview) and [Account API](https://serpwow.com/docs/account).
 
 The package requires Goland 1.8 or above, the package has no dependancies.
 
@@ -8,7 +8,7 @@ The package requires Goland 1.8 or above, the package has no dependancies.
 We have included examples here but full SerpWow API documentation is available at the [API Docs](https://serpwow.com/docs):
 - [Search API Docs](https://serpwow.com/docs/search/overview) 
 - [Locations API Docs](https://serpwow.com/docs/locations/overview) 
-- [Account API Docs](https://serpwow.com/docs/account/overview)
+- [Account API Docs](https://serpwow.com/docs/account)
 
 You can also use the [API Playground](https://app.serpwow.com/playground) to visually build Google search requests using SerpWow.
 
@@ -472,7 +472,7 @@ func main() {
 ```
 
 ## Account API Example
-The [Account API](https://serpwow.com/docs/account/overview) allows you to check your current SerpWow usage and billing information. 
+The [Account API](https://serpwow.com/docs/account) allows you to check your current SerpWow usage and billing information. 
 ```go
 package main
 
