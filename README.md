@@ -1,6 +1,6 @@
 # Google Search Results in Golang
 
-This Golang package allows you to scrape and parse Google Search Results using [SerpWow](https://serpwow.com). In addition to [Search](https://serpwow.com/docs/search/overview) you can also use this package to access the SerpWow [Locations API](https://serpwow.com/docs/locations/overview) and [Account API](https://serpwow.com/docs/account).
+This Golang package allows you to scrape and parse Google Search Results using [SerpWow](https://serpwow.com). In addition to [Search](https://serpwow.com/docs/search/overview) you can also use this package to access the SerpWow [Locations API](https://serpwow.com/docs/locations/overview), [Batches API](https://serpwow.com/docs/batches/overview) and [Account API](https://serpwow.com/docs/account).
 
 The package requires Goland 1.8 or above, the package has no dependancies.
 
@@ -25,6 +25,7 @@ You can also use the [API Playground](https://app.serpwow.com/playground) to vis
 - [Search example with all parameters](#search-example-with-all-parameters)
 - [Locations API Example](#locations-api-example)
 - [Account API Example](#account-api-example)
+- [Batches API](#batches-api)
 
 ## Simple Example
 Simplest example for a standard query "pizza", returning the Google SERP (Search Engine Results Page) data as JSON.
@@ -494,3 +495,8 @@ func main() {
 	}
 }
 ```
+
+## Batches API
+The [Batches API](https://serpwow.com/docs/batches) allows you to create, update and delete Batches on your SerpWow account (Batches allow you to save up to 10,000 Searches and have SerpWow run them on a schedule).
+
+For more information and extensive code samples please see the [Batches API Docs](https://serpwow.com/docs/batches).
