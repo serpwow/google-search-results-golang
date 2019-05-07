@@ -383,7 +383,7 @@ func main() {
   // request the first 100 results
 	parameters := map[string]string{
     "q" : "pizza",
-    "start" : 0,
+    "page" : 1,
     "num": 100
   }
   responsePage1, errorPage1 := serpwow.GetJSON(parameters, apiKey)
@@ -394,7 +394,7 @@ func main() {
 	}
 
   // request the next 100 results
-  parameters["start"] = 100
+  parameters["page"] = 2
   responsePage2, errorPage2 := serpwow.GetJSON(parameters, apiKey)
   if errorPage2 != nil {
 		fmt.Println(errorPage2)
@@ -428,7 +428,7 @@ func main() {
     "time_period_max" : "02/08/2019",
     "device" : "mobile",
     "csv_fields" : "search.q,organic_results.position,organic_results.domain",
-    "start" : "0",
+    "page" : "1",
     "num" : "100",
   }
   
