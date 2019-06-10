@@ -38,7 +38,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // set up our parameters
 	parameters := map[string]string{
@@ -159,7 +159,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // set up our parameters
 	parameters := map[string]string{
@@ -189,7 +189,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // perform a search on Google News, just looking at blogs, ordered by date, in the last year, filtering out duplicates
 	parameters := map[string]string{
@@ -244,7 +244,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // set up our parameters
 	parameters := map[string]string{
@@ -288,7 +288,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // set up the mobile params
 	parametersMobile := map[string]string{
@@ -344,7 +344,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // make a simple query, returning JSON
 	parameters := map[string]string{
@@ -378,7 +378,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // request the first 100 results
 	parameters := map[string]string{
@@ -413,7 +413,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // set up query parameters, retrieving results as CSV (note the csv_fields param)
 	parameters := map[string]string{
@@ -454,7 +454,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // # set up the parameters for the location query parameters
 	parameters := map[string]string{
@@ -483,7 +483,7 @@ import "serpwow"
 
 func main() {
   // set our API key
-  apiKey := "demo"
+  apiKey := "API_KEY"
 
   // get our account info
   response, error := serpwow.GetAccount(apiKey)
