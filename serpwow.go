@@ -164,6 +164,11 @@ func StartBatch(batchId string, apiKey string) (SerpWowResponse, error) {
 	return decodeJSON(rsp.Body)
 }
 
+func StopBatch(batchId string, apiKey string) (SerpWowResponse, error) {
+	rsp := httpGet(map[string]interface{}{}, "json", apiKey, "/batches/" + batchId + "/stop")
+	return decodeJSON(rsp.Body)
+}
+
 func GetBatch(batchId string, apiKey string) (SerpWowResponse, error) {
 	rsp := httpGet(map[string]interface{}{}, "json", apiKey, "/batches/" + batchId)
 	return decodeJSON(rsp.Body)
